@@ -15,7 +15,7 @@ All firmware is written in **C using ESP-IDF**, with **LVGL** used for display r
 
 ## Features
 
-- Real-time clock display
+- Display current time
 - Page-swiping UI using capacitive touch input
 - Compass feature using QMI8658 IMU 
 - Stopwatch feature 
