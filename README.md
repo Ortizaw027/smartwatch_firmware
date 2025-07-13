@@ -49,11 +49,11 @@ Long-term plans include designing a custom PCB and 3D-printed watch casing to cr
 ---
 
 ## Repository Structure
--`/Mark_I/` # Firmware and resources for Mark I iteration
--`/Mark_II/` # Firmware and resources for Mark II iteration
--`/docs/`# 3D design files, PCB design files, and other resources
--`/LICENSE.md` # License file
--`/README.md` # This master README
+- `/Mark_I/` # Firmware and resources for Mark I iteration
+- `/Mark_II/` # Firmware and resources for Mark II iteration
+- `/docs/`# 3D design files, PCB design files, and other resources
+- `/LICENSE.md` # License file
+- `/README.md` # This master README
 
 ---
 
