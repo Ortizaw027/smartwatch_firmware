@@ -1,39 +1,62 @@
-# ESP32 Smartwatch Firmware (ESP-IDF)
+# STP - Smart Time Piece
 
-This repository contains firmware for a custom smartwatch project built using the ESP32-S3 and developed with the ESP-IDF framework. The goal is to create a feature-complete, low-power wearable device with a responsive UI and expandable sensor/peripheral support — a foundation for a production-ready smartwatch platform.
+STP (Smart Time Piece) is an open-source ESP32-based smartwatch firmware and hardware platform.  
+This repository contains the firmware for STP, developed using ESP-IDF for the ESP32-S3 SoC, designed to provide a low-power, feature-rich wearable with a modern UI and expandability.
 
-## Project Overview
+---
 
-This project runs on the [Waveshare ESP32-S3 1.28" Round LCD Dev Board](https://www.waveshare.com/wiki/ESP32-S3-Touch-LCD-1.28), which integrates:
-- **ESP32-S3R2** SoC
-- **GC9A01 240×240 round LCD**
-- **CST816S capacitive touch controller**
-- **QMI8658 6-axis IMU**
-- **Battery management and charging circuit**
+## Project Status
 
-All firmware is written in **C using ESP-IDF**, with **LVGL** used for display rendering and UI.
+STP is under active development and evolves through iterative versions.  
+Each iteration represents a significant milestone in features and hardware/software improvements.  
+This README will be updated as the project grows.  
 
-## Features
+---
 
-- Display current time
-- Page-swiping UI using capacitive touch input
-- Compass feature using QMI8658 IMU 
-- Stopwatch feature 
-- Sleep mode with display timeout
-- Wake gesture detection via IMU
+## Iteration History
 
-## Future Hardware Plans
+### Mark I
 
-This project is currently developed on a dev board, but the long-term roadmap includes:
-- **Custom 3D-printed watch casing**  
-  Designed to make the dev board wearable like a commercial smartwatch.
-- **Custom PCB Bring-Up**  
-  A fully custom smartwatch PCB designed to:
-  - Match mechanical constraints of the printed case (or design a new case if necessary)
-  - Include additional peripherals (e.g., haptic motor, pulse sensor, BLE co-processor, etc.)
+- Basic time display with ESP32 RTC and NTP synchronization  
+- Touch-based page-swiping UI using LVGL  
+- Compass using QMI8658 6-axis IMU  
+- Stopwatch functionality  
+- Display timeout with light sleep power management  
+- Wake gesture detection via IMU  
 
-## Open Source Usage
+### Mark II (Planned)
 
-This project is open-source and intended to be shared, modified, and built upon — including full hardware and enclosure design in the future. You're welcome to flash your own version, print a custom case, or fork the firmware.
+- Deep sleep mode with RTC wake-up support  
+- Expanded sensor suite (e.g., heart rate monitor, environmental sensors)   
+- Enhanced UI with settings and customization  
+- Custom PCB support  
 
-This project is licensed under the MIT License. See the [LICENSE](./LICENSE.md) file for details.
+
+---
+
+## Hardware Platform
+
+This firmware currently runs on the [Waveshare ESP32-S3 1.28" Round LCD Dev Board](https://www.waveshare.com/wiki/ESP32-S3-Touch-LCD-1.28), which features:
+
+- ESP32-S3R2 System on Chip  
+- GC9A01 240×240 round LCD display  
+- CST816S capacitive touch controller  
+- QMI8658 6-axis IMU sensor  
+- Battery management and charging circuitry
+
+Long-term plans include designing a custom PCB and 3D-printed watch casing to create a fully integrated, production-quality smartwatch.
+
+---
+
+## Repository Structure
+/Mark_I/ # Firmware and resources for Mark I iteration
+/Mark_II/ # Firmware and resources for Mark II iteration
+/docs/ # 3D design files, PCB design files, and other resources
+/LICENSE.md # License file
+/README.md # This master README
+
+---
+
+## License
+
+This project is licensed under the MIT License. See [LICENSE](./LICENSE.md) for details.
