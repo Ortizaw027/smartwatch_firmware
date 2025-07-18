@@ -8,14 +8,14 @@ This repository contains the firmware for STP, developed using ESP-IDF for the E
 ## Project Status
 
 STP is under active development and evolves through iterative versions.  
-Each iteration represents a significant milestone in features and hardware/software improvements.  
+Each iteration will add new and improved features in hardware/software.  
 This README will be updated as the project grows.  
 
 ---
 
 ## Iteration History
 
-### Mark I
+### V1 
 
 - Basic time display with ESP32 RTC and NTP synchronization  
 - Touch-based page-swiping UI using LVGL  
@@ -24,7 +24,7 @@ This README will be updated as the project grows.
 - Display timeout with light sleep power management  
 - Wake gesture detection via IMU  
 
-### Mark II (Planned)
+### V2 (Future Plans)
 
 - Deep sleep mode with RTC wake-up support  
 - Expanded sensor suite (e.g., heart rate monitor, environmental sensors)   
@@ -49,8 +49,8 @@ Long-term plans include designing a custom PCB and 3D-printed watch casing to cr
 ---
 
 ## Repository Structure
-- `/Mark_I/` # Firmware and resources for Mark I iteration
-- `/Mark_II/` # Firmware and resources for Mark II iteration
+- `/V1/` # Firmware and resources for V1 iteration
+- `/V2/` # Firmware and resources for V2 iteration
 - `/docs/`# 3D design files, PCB design files, and other resources
 - `/LICENSE.md` # License file
 - `/README.md` # This master README
