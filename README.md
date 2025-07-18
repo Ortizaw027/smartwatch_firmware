@@ -44,7 +44,7 @@ This firmware currently runs on the [Waveshare ESP32-S3 1.28" Round LCD Dev Boar
 - QMI8658 6-axis IMU sensor  
 - Battery management and charging circuitry
 
-Long-term plans include designing a custom PCB and 3D-printed watch casing to create a fully integrated, production-quality smartwatch.
+Long-term plans include designing a custom PCB and 3D-printed watch casing to create a fully integrated smartwatch.
 
 ---
 
